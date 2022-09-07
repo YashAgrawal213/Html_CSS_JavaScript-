@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LAYOUT</title>
+    <style>
+        *{padding:0;margin: 5; box-sizing:border-box;}
+        #header
+        {
+            width: 100%;
+            height: 100px;
+            border: 4px double black;
+            display: flex;
+            color:white;
+            text-align: center;
+            align-items: center; 
+            justify-content: space-evenly;
+            padding: 20px;
+            top: 0;
+        }
+        
+        h2
+        {
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 30px;
+        
+        }
+        #sec-1
+        {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        #sec-1 main
+        {
+            width: 48%;
+            height: 450px;
+            border: 4px double black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+        aside
+        {
+            width:50%;
+            height: 500px;
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+
+        }
+    
+        aside .art
+        {
+            width:95%;
+            height:150px;
+            border: 4px double black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        aside .art1
+        {
+            width:95%;
+            height:450px;
+            border: 4px double black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        footer
+        {
+            width: 100%;
+            height:100px;
+            border: 4px double black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div style="border: 10px double black;">
+        <br>
+    
+   <header id="header">
+        <nav>
+            <ul>
+                <span><a href="#">Home</a></span>
+                <span><a href="#">About</a></span>
+                <span><a href="#">Services</a></span>
+                <span><a href="#">Downloads</a></span>
+                <span><a href="#">Contact Us</a></span>
+        </ul>
+    </nav>
+    </header>
+    <br>
+
+    <section id="sec-1"> 
+        <aside>
+            <article  class="art">Section Article</article>
+            <article  class="art">Article</article>
+            <article  class="art">Section</article>
+        </aside>
+        <main>
+            Section
+        </main>
+        <aside>
+            <article  class="art1">aside</article>
+        </aside>
+        
+        
+        
+    </section>
+    <footer>
+        Footer
+    </footer>
+    <br>
+</div>
+</body>
+</html>
+
+
+
+
+
+
